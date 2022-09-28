@@ -1,0 +1,1019 @@
+/* Audio Start */
+
+.btn-audio {
+    position: fixed;
+    z-index: 99999;
+    background-color: #a68558;
+    padding: 14px;
+    bottom: 15px;
+    left: 15px;
+    border-radius: 10px;
+    border: none;
+    -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.308);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.308);
+    opacity: 0.5;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+.btn-audio:hover {
+    opacity: 1;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+.btn-audio i {
+    font-size: 25px;
+    color: #fff;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+@media (max-width: 768px) {
+    .btn-audio i {
+        font-size: 46px;
+    }
+}
+
+@media (max-width: 540px) {
+    .btn-audio {
+        padding: 10px;
+    }
+    .btn-audio i {
+        font-size: 25px;
+    }
+}
+
+
+/* Audio End */
+
+
+/* Scroll Up Start */
+
+.btn-scroll {
+    position: fixed;
+    z-index: 99999;
+    background-color: #a68558;
+    padding: 5px;
+    bottom: 15px;
+    right: 15px;
+    border-radius: 10px;
+    border: none;
+    -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.308);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.308);
+    -webkit-filter: opacity(70%);
+    filter: opacity(70%);
+    -webkit-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+
+.btn-scroll i {
+    font-size: 45px;
+    color: #fff;
+    -webkit-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+
+@media (max-width: 768px) {
+    .btn-scroll i {
+        font-size: 65px;
+    }
+}
+
+@media (max-width: 540px) {
+    .btn-scroll i {
+        font-size: 35px;
+    }
+}
+
+
+/* Scroll Up End */
+
+@font-face {
+    font-family: 'Daughter of Fortune';
+    src: url("../font/daughter-of-fortune.ttf") format("truetype");
+}
+
+body {
+    margin: 0;
+}
+
+.wave-header {
+    position: relative;
+    text-align: center;
+    background-image: url("../../img/cover-blur.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.wave-header .inner-header {
+    height: 90vh;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.wave-header .inner-header .header-cover {
+    width: 700px;
+    -webkit-box-shadow: 0 0 100px black;
+    box-shadow: 0 0 100px black;
+}
+
+.wave-header .inner-header .inner-label {
+    position: absolute;
+    bottom: 100px;
+    left: 50px;
+    right: 50px;
+}
+
+.wave-header .inner-header .inner-label .inner-heading {
+    font-family: 'Daughter of Fortune';
+    color: white;
+    font-size: 100px;
+    font-weight: 400;
+    margin: 0;
+}
+
+.wave-header .inner-header .inner-label .inner-subheading {
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+    font-size: 45px;
+    font-weight: 100;
+    margin: 0;
+    letter-spacing: 10px;
+}
+
+.wave-header .waves {
+    position: relative;
+    width: 100%;
+    height: 15vh;
+    margin-bottom: -7px;
+    /*Fix for safari gap*/
+    min-height: 100px;
+    max-height: 150px;
+}
+
+.flex {
+    /*Flexbox for containers*/
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+/* Animation */
+
+.parallax>use {
+    -webkit-animation: move-forever 25s cubic-bezier(0.55, 0.5, 0.45, 0.5) infinite;
+    animation: move-forever 25s cubic-bezier(0.55, 0.5, 0.45, 0.5) infinite;
+}
+
+.parallax>use:nth-child(1) {
+    -webkit-animation-delay: -2s;
+    animation-delay: -2s;
+    -webkit-animation-duration: 7s;
+    animation-duration: 7s;
+}
+
+.parallax>use:nth-child(2) {
+    -webkit-animation-delay: -3s;
+    animation-delay: -3s;
+    -webkit-animation-duration: 10s;
+    animation-duration: 10s;
+}
+
+.parallax>use:nth-child(3) {
+    -webkit-animation-delay: -4s;
+    animation-delay: -4s;
+    -webkit-animation-duration: 13s;
+    animation-duration: 13s;
+}
+
+.parallax>use:nth-child(4) {
+    -webkit-animation-delay: -5s;
+    animation-delay: -5s;
+    -webkit-animation-duration: 20s;
+    animation-duration: 20s;
+}
+
+@-webkit-keyframes move-forever {
+    0% {
+        -webkit-transform: translate3d(-90px, 0, 0);
+        transform: translate3d(-90px, 0, 0);
+    }
+    100% {
+        -webkit-transform: translate3d(85px, 0, 0);
+        transform: translate3d(85px, 0, 0);
+    }
+}
+
+@keyframes move-forever {
+    0% {
+        -webkit-transform: translate3d(-90px, 0, 0);
+        transform: translate3d(-90px, 0, 0);
+    }
+    100% {
+        -webkit-transform: translate3d(85px, 0, 0);
+        transform: translate3d(85px, 0, 0);
+    }
+}
+
+@font-face {
+    font-family: 'Daughter of Fortune';
+    src: url("../font/daughter-of-fortune.ttf") format("truetype");
+}
+
+.content-wave {
+    position: relative;
+    text-align: center;
+    background-color: white;
+    /* Countdown End */
+}
+
+.content-wave .salam-pembuka {
+    width: 400px;
+    margin-top: 50px;
+}
+
+.content-wave .profile-subheading {
+    font-family: 'Times New Roman', Times, serif;
+    color: #a68558;
+    font-size: 25px;
+    font-weight: 400;
+    width: 90%;
+    line-height: 1.5;
+    margin: 25px auto;
+}
+
+.content-wave .profile-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+    -ms-flex-pack: space-evenly;
+    justify-content: space-evenly;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+}
+
+.content-wave .profile-content .img-box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+
+.content-wave .profile-content .img-box .img-male,
+.content-wave .profile-content .img-box .img-female {
+    margin-top: 50px;
+    width: 300px;
+}
+
+.content-wave .profile-content .img-box .profile-list {
+    width: 350px;
+    margin-top: 10px;
+    -webkit-transform: scaleY(-1);
+    transform: scaleY(-1);
+}
+
+.content-wave .profile-content h2,
+.content-wave .profile-content p {
+    color: #a68558;
+    margin: 10px auto;
+}
+
+.content-wave .profile-content .profile-name {
+    font-family: 'Daughter of Fortune';
+    color: #a68558;
+    font-size: 35px;
+    font-weight: 400;
+}
+
+.content-wave .profile-content .profile-detail {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 22px;
+    font-style: italic;
+}
+
+.content-wave .profile-content .profile-detail span {
+    font-weight: 800;
+    font-style: normal;
+}
+
+.content-wave .profile-content .address {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 22px;
+}
+
+.content-wave .date-section {
+    background-image: url("../../img/bg-transparan.jpg");
+    width: 100%;
+    height: 700px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    margin-top: 50px;
+}
+
+.content-wave .date-section .card {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    width: 700px;
+    background-color: rgba(255, 255, 255, 0.63);
+    border-radius: 35px;
+    padding: 50px;
+    -webkit-box-shadow: 0 0 50px 0 rgba(0, 0, 0, 0.336);
+    box-shadow: 0 0 50px 0 rgba(0, 0, 0, 0.336);
+}
+
+.content-wave .date-section .card img {
+    width: 100px;
+}
+
+.content-wave .date-section .card .date-heading {
+    font-family: 'Daughter of Fortune';
+    color: #a68558;
+    font-size: 65px;
+    font-weight: 500;
+    margin: 0;
+}
+
+.content-wave .date-section .card .date-detail {
+    font-family: 'Times New Roman', Times, serif;
+    color: #a68558;
+    font-size: 25px;
+    font-weight: 600;
+    font-style: italic;
+    margin-top: 20px;
+    line-height: 1.5;
+}
+
+.content-wave .date-section .card .btn-lokasi {
+    background-color: #a68558;
+    border-radius: 50px;
+    padding: 15px 35px;
+    border: none;
+    margin-top: 15px;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+.content-wave .date-section .card .btn-lokasi:hover {
+    background-color: #4d120b;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+.content-wave .date-section .card .btn-lokasi .link-lokasi {
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+    font-size: 20px;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+.content-wave .thanks-section .card {
+    margin: auto;
+    padding: 50px;
+}
+
+.content-wave .thanks-section .card .salam-penutup {
+    width: 400px;
+}
+
+.content-wave .thanks-section .card p {
+    font-family: 'Times New Roman', Times, serif;
+    color: #a68558;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.5;
+    font-style: italic;
+}
+
+.content-wave .thanks-section .card p span {
+    font-weight: 800;
+}
+
+@font-face {
+    .content-wave {
+        font-family: 'Daughter of Fortune';
+        src: url("../font/daughter-of-fortune.ttf") format("truetype");
+    }
+}
+
+.content-wave .countdown-box .heading {
+    font-family: 'Daughter of Fortune';
+    color: #a68558;
+    font-size: 65px;
+    font-weight: 500;
+    margin-top: 0;
+}
+
+.content-wave .countdown-box .countdown {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    color: var(--primary-color);
+}
+
+.content-wave .countdown-box .countdown .time {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: start;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    background-color: #a68558;
+    width: 100px;
+    padding: 0 10px;
+    border-radius: 20px;
+}
+
+.content-wave .countdown-box .countdown .time .label {
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+    font-size: 25px;
+    font-weight: 400;
+    font-style: italic;
+    margin-bottom: 15px;
+}
+
+.content-wave .countdown-box .countdown .time:not(:last-child) {
+    margin-right: 16px;
+}
+
+.content-wave .countdown-box .countdown .time #days,
+.content-wave .countdown-box .countdown .time #hours,
+.content-wave .countdown-box .countdown .time #minutes,
+.content-wave .countdown-box .countdown .time #seconds {
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+    font-size: 50px;
+    font-weight: 400;
+    letter-spacing: 0.3px;
+}
+
+.content-wave .countdown-box .countdown .semicolon {
+    display: none;
+}
+
+.content-wave #expired {
+    font-family: 'Times New Roman', Times, serif;
+    color: #a68558;
+    font-size: 35px;
+    font-weight: 400;
+    margin: 25px auto;
+    font-style: italic;
+}
+
+@media only screen and (max-width: 1024px) {
+    .content-wave .countdown {
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .content-wave .countdown .time #days,
+    .content-wave .countdown .time #hours,
+    .content-wave .countdown .time #minutes,
+    .content-wave .countdown .time #seconds,
+    .content-wave .countdown .time .semicolon {
+        font-size: 72px;
+        line-height: 91px;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .content-wave .countdown .time #days,
+    .content-wave .countdown .time #hours,
+    .content-wave .countdown .time #minutes,
+    .content-wave .countdown .time #seconds,
+    .content-wave .countdown .time .semicolon {
+        font-size: 40px;
+        line-height: 50px;
+        text-align: center;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .content-wave .countdown .semicolon {
+        font-size: 72px;
+        line-height: 91px;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .content-wave .countdown .semicolon {
+        font-size: 40px;
+        line-height: 50px;
+        text-align: center;
+    }
+}
+
+.content-wave .gallery-grid {
+    background: -webkit-gradient(linear, left bottom, left top, from(rgba(166, 133, 88, 0.349)), to(white));
+    background: linear-gradient(0deg, rgba(166, 133, 88, 0.349), white);
+    margin-top: 100px;
+}
+
+.content-wave .gallery-grid .container {
+    margin: 0 !important;
+    padding: 30px;
+}
+
+.content-wave .gallery-grid .container .gallery-heading {
+    font-family: 'Daughter of Fortune';
+    color: #a68558;
+    font-size: 65px;
+    font-weight: 300;
+}
+
+.content-wave .gallery-grid .container .row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+.content-wave .gallery-grid .container .row .img-gallery-grid {
+    width: 25%;
+    margin: 20px;
+}
+
+.content-wave .gallery-grid .container .row .img-gallery-grid img {
+    border-radius: 20px;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+.content-wave .gallery-grid .container .row .img-gallery-grid img:hover {
+    -webkit-filter: brightness(50%);
+    filter: brightness(50%);
+    position: relative;
+    -webkit-transform: scale(1.1, 1.1);
+    transform: scale(1.1, 1.1);
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    z-index: 9999;
+}
+
+.content-wave .prokes {
+    margin-top: 100px;
+}
+
+.content-wave .prokes .container .prokes-title .prokes-heading {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 30px;
+    margin: 10px auto;
+}
+
+.content-wave .prokes .container .prokes-title .prokes-subheading {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    margin: 0;
+}
+
+.content-wave .prokes .container .prokes-img {
+    margin-top: 100px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+    -ms-flex-pack: space-evenly;
+    justify-content: space-evenly;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+}
+
+.content-wave .prokes .container .prokes-img .img-box img {
+    width: 125px;
+}
+
+.content-wave .prokes .container .prokes-img .img-box .label {
+    font-family: 'Times New Roman', Times, serif;
+    color: black;
+    font-size: 20px;
+    font-weight: 400;
+    margin: 10px;
+}
+
+.content-wave .footer .footer-heading {
+    font-family: 'Daughter of Fortune';
+    color: black;
+    font-size: 45px;
+    font-weight: 400;
+}
+
+.content-wave .footer .social .social-wa,
+.content-wave .footer .social .social-gmail {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+
+.content-wave .footer .social .social-wa i,
+.content-wave .footer .social .social-gmail i {
+    font-size: 35px;
+}
+
+.content-wave .footer .copy {
+    font-family: 'Times New Roman', Times, serif;
+    color: black;
+    font-size: 18px;
+    font-weight: 400;
+    margin: 0;
+    margin-top: 7px;
+    padding-bottom: 50px;
+}
+
+
+/*Shrinking for tablet*/
+
+@media (max-width: 768px) {
+    .wave-header .waves {
+        height: 65px;
+        min-height: 65px;
+    }
+    .content-wave .profile-subheading {
+        width: 90%;
+    }
+    .content-wave .profile-content {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+    }
+    .content-wave .profile-content .divider {
+        margin: 50px auto;
+    }
+    .content-wave .profile-content h2,
+    .content-wave .profile-content p {
+        color: #a68558;
+        margin: 20px auto;
+    }
+    .content-wave .profile-content .profile-name {
+        font-family: 'Daughter of Fortune';
+        color: #a68558;
+        font-size: 50px;
+        font-weight: 400;
+    }
+    .content-wave .profile-content .profile-detail {
+        font-size: 30px;
+    }
+    .content-wave .profile-content .address {
+        font-size: 30px;
+    }
+    .content-wave .profile-content .address .break {
+        display: none;
+    }
+    .content-wave .date-section .card {
+        width: 500px;
+    }
+    .content-wave .thanks-section .card p {
+        font-size: 25px;
+    }
+    .content-wave .countdown-box .countdown .time {
+        padding-top: 14px;
+    }
+    .content-wave .gallery-grid {
+        margin-top: 50px !important;
+    }
+    .content-wave .gallery-grid .container .gallery-heading {
+        font-size: 35px;
+        margin: 0;
+    }
+    .content-wave .prokes .container .prokes-title .prokes-subheading {
+        width: 90%;
+        text-align: center;
+        margin: auto;
+    }
+    .content-wave .prokes .container .prokes-img {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    }
+    .content-wave .prokes .container .prokes-img .img-box {
+        width: 300px;
+        padding: 20px;
+    }
+    .content-wave .prokes .container .prokes-img .img-box img {
+        width: 150px;
+    }
+    .content-wave .prokes .container .prokes-img .img-box .label {
+        font-size: 25px;
+    }
+    .content-wave .footer .footer-heading {
+        color: black;
+        font-size: 55px;
+        font-weight: 400;
+    }
+    .content-wave .footer .social .social-wa,
+    .content-wave .footer .social .social-gmail {
+        font-size: 25px;
+    }
+    .content-wave .footer .social .social-wa i,
+    .content-wave .footer .social .social-gmail i {
+        font-size: 45px;
+    }
+    .content-wave .footer .copy {
+        color: black;
+        font-size: 25px;
+        font-weight: 400;
+    }
+}
+
+
+/*Shrinking for mobile*/
+
+@font-face {
+    font-family: 'Daughter of Fortune';
+    src: url("../font/daughter-of-fortune.ttf") format("truetype");
+}
+
+@media (max-width: 540px) {
+    .wave-header .inner-header {
+        height: 90vh;
+        overflow: hidden;
+    }
+    .wave-header .inner-header .header-cover {
+        width: 540px;
+    }
+    .wave-header .inner-header .inner-label {
+        bottom: 50px;
+    }
+    .wave-header .inner-header .inner-label .inner-heading {
+        color: white;
+        font-size: 50px;
+        font-weight: 400;
+    }
+    .wave-header .inner-header .inner-label .inner-subheading {
+        color: white;
+        font-size: 20px;
+        font-weight: 100;
+        letter-spacing: 5px;
+    }
+    .wave-header .waves {
+        height: 40px;
+        min-height: 40px;
+    }
+    .content-wave .salam-pembuka {
+        width: 250px;
+    }
+    .content-wave .profile-subheading {
+        width: 90%;
+        color: #a68558;
+        font-size: 20px;
+        font-weight: 400;
+    }
+    .content-wave .profile-content {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+    }
+    .content-wave .profile-content .divider {
+        width: 50px;
+    }
+    .content-wave .profile-content .img-box .profile-img {
+        width: 200px;
+    }
+    .content-wave .profile-content .img-box .profile-list {
+        width: 300px;
+    }
+    .content-wave .profile-content h2,
+    .content-wave .profile-content p {
+        color: #a68558;
+        margin: 10px auto;
+    }
+    .content-wave .profile-content .profile-name {
+        color: #a68558;
+        font-size: 35px;
+        font-weight: 400;
+    }
+    .content-wave .profile-content .profile-detail {
+        font-size: 20px;
+    }
+    .content-wave .profile-content .address {
+        font-size: 20px;
+    }
+    .content-wave .date-section .card {
+        width: 250px;
+    }
+    .content-wave .date-section .card img {
+        width: 90px;
+    }
+    .content-wave .date-section .card .date-heading {
+        color: #a68558;
+        font-size: 55px;
+        font-weight: 500;
+    }
+    .content-wave .date-section .card .date-detail {
+        color: #a68558;
+        font-size: 18px;
+        font-weight: 600;
+    }
+    .content-wave .date-section .card .btn-lokasi .link-lokasi {
+        font-size: 15px;
+    }
+    .content-wave .thanks-section .card {
+        padding: 12px;
+    }
+    .content-wave .thanks-section .card .salam-penutup {
+        width: 250px;
+    }
+    .content-wave .thanks-section .card p {
+        font-size: 12px;
+    }
+    .content-wave .countdown-box .heading {
+        color: #a68558;
+        font-size: 35px;
+        font-weight: 500;
+        margin-top: 20px;
+    }
+    .content-wave .countdown-box .countdown .time {
+        width: 65px;
+        padding: 0;
+        border-radius: 10px;
+    }
+    .content-wave .countdown-box .countdown .time .label {
+        font-family: 'Times New Roman', Times, serif;
+        color: white;
+        font-size: 14px;
+        font-weight: 400;
+        margin-bottom: 12px;
+    }
+    .content-wave .countdown-box .countdown .time #days,
+    .content-wave .countdown-box .countdown .time #hours,
+    .content-wave .countdown-box .countdown .time #minutes,
+    .content-wave .countdown-box .countdown .time #seconds {
+        font-family: 'Times New Roman', Times, serif;
+        color: white;
+        font-size: 25px;
+        font-weight: 400;
+    }
+    .content-wave .countdown-box #expired {
+        font-size: 25px;
+    }
+    .content-wave .gallery-grid {
+        margin-top: 50px;
+    }
+    .content-wave .gallery-grid .container {
+        padding: 20px;
+    }
+    .content-wave .gallery-grid .container .gallery-heading {
+        margin: 0;
+        margin-bottom: 5px;
+        font-size: 45px;
+    }
+    .content-wave .gallery-grid .container .row .img-gallery-grid {
+        width: 100%;
+        margin: 10px;
+    }
+    .content-wave .prokes .container .prokes-title .prokes-heading {
+        font-size: 25px;
+    }
+    .content-wave .prokes .container .prokes-title .prokes-subheading {
+        font-size: 18px;
+    }
+    .content-wave .prokes .container .prokes-img {
+        margin-top: 50px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-pack: distribute;
+        justify-content: space-around;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+        flex-direction: row;
+    }
+    .content-wave .prokes .container .prokes-img .img-box {
+        width: 120px;
+    }
+    .content-wave .prokes .container .prokes-img .img-box img {
+        width: 100px;
+        padding: 0;
+    }
+    .content-wave .prokes .container .prokes-img .img-box .label {
+        font-size: 14px;
+    }
+    .content-wave .footer .footer-heading {
+        color: black;
+        font-size: 35px;
+        font-weight: 400;
+    }
+    .content-wave .footer .social .social-wa,
+    .content-wave .footer .social .social-gmail {
+        font-size: 16px;
+    }
+    .content-wave .footer .social .social-wa i,
+    .content-wave .footer .social .social-gmail i {
+        font-size: 30px;
+    }
+    .content-wave .footer .copy {
+        font-family: 'Times New Roman', Times, serif;
+        color: black;
+        font-size: 16px;
+        font-weight: 400;
+        margin: 0;
+        margin-top: 7px;
+        padding-bottom: 50px;
+    }
+}
+
+
+/*# sourceMappingURL=main.css.map */

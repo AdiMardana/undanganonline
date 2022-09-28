@@ -1,0 +1,331 @@
+@font-face {
+    font-family: 'Daughter of Fortune';
+    src: url("../font/daughter-of-fortune.ttf") format("truetype");
+}
+
+body {
+    margin: 0;
+    transition: all 0.5s ease-in-out;
+}
+
+.modal {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 99999999999999;
+    background-image: url("../img/cover-modal.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    transition: all 0.5s ease-in-out;
+}
+
+
+/* Image Animation Start */
+
+.modal .img-1 {
+    position: absolute;
+    width: 150px;
+    top: -80px;
+    right: -80px;
+    transform: rotate(180deg);
+    animation-name: flower-1;
+    animation-fill-mode: forwards;
+    animation-duration: 1s;
+    animation-delay: 0.2s;
+    animation-timing-function: ease;
+}
+
+@keyframes flower-1 {
+    from {
+        top: -80px;
+        right: -80px
+    }
+    to {
+        top: 0px;
+        right: 0;
+    }
+}
+
+.modal .img-2 {
+    position: absolute;
+    width: 150px;
+    top: -80px;
+    left: -80px;
+    transform: rotate(180deg);
+    transform: scaleY(-1);
+    animation-name: flower-2;
+    animation-fill-mode: forwards;
+    animation-duration: 1s;
+    animation-delay: 0.5s;
+    animation-timing-function: ease;
+}
+
+@keyframes flower-2 {
+    from {
+        top: -80px;
+        left: -80px
+    }
+    to {
+        top: 0px;
+        left: 0;
+    }
+}
+
+.modal .img-3 {
+    position: absolute;
+    width: 100px;
+    bottom: -10px;
+    left: -110px;
+    transform: rotate(-90deg);
+    animation-name: flower-3;
+    animation-fill-mode: forwards;
+    animation-duration: 1s;
+    animation-delay: 1s;
+    animation-timing-function: ease;
+}
+
+@keyframes flower-3 {
+    from {
+        bottom: -10px;
+        left: -110px
+    }
+    to {
+        bottom: -10px;
+        left: 0;
+    }
+}
+
+.modal .img-4 {
+    position: absolute;
+    width: 100px;
+    bottom: -100px;
+    left: 100px;
+    transform: rotate(-150deg);
+    animation-name: flower-4;
+    animation-fill-mode: forwards;
+    animation-duration: 1s;
+    animation-delay: 1s;
+    animation-timing-function: ease;
+}
+
+@keyframes flower-4 {
+    from {
+        bottom: -100px;
+        left: 100px;
+    }
+    to {
+        bottom: -20px;
+        left: 100px;
+    }
+}
+
+.modal .img-5 {
+    position: absolute;
+    width: 100px;
+    bottom: -100px;
+    right: 100px;
+    transform: rotate(150deg);
+    animation-name: flower-5;
+    animation-fill-mode: forwards;
+    animation-duration: 1s;
+    animation-delay: 1.5s;
+    animation-timing-function: ease;
+}
+
+@keyframes flower-5 {
+    from {
+        bottom: -100px;
+        right: 100px;
+    }
+    to {
+        bottom: -20px;
+        right: 100px;
+    }
+}
+
+.modal .img-6 {
+    position: absolute;
+    width: 100px;
+    bottom: -10px;
+    right: -110px;
+    transform: rotate(90deg);
+    animation-name: flower-6;
+    animation-fill-mode: forwards;
+    animation-duration: 1s;
+    animation-delay: 1.7s;
+    animation-timing-function: ease;
+}
+
+@keyframes flower-6 {
+    from {
+        bottom: -10px;
+        right: -110px;
+    }
+    to {
+        bottom: -10px;
+        right: 0;
+    }
+}
+
+
+/* Image Animation End */
+
+.modal .modal-cover {
+    width: 1000px;
+    padding: 50px;
+    background-color: white;
+    border-radius: 35px;
+    margin: auto;
+    margin-top: 200px;
+    text-align: center;
+    box-shadow: 5px 5px 30px rgba(64, 64, 64, 0.653);
+}
+
+.modal .modal-cover .modal-content {
+    width: 100%;
+    text-align: center;
+}
+
+.modal .modal-cover .modal-content .modal-card {
+    width: 100%;
+    margin: auto;
+    padding-top: 10px;
+    background-color: white;
+    border-radius: 35px;
+}
+
+.modal .modal-cover .modal-content .modal-card .title-card {
+    font-family: 'The Nautigal', cursive;
+    color: #a68558;
+    font-size: 70px;
+    font-weight: 400;
+    margin: 0;
+    margin-bottom: 25px;
+}
+
+.modal .modal-cover .modal-content .modal-card .title-card span {
+    font-family: 'Edu VIC WA BT Begginer', cursive;
+    font-size: 20px !important;
+    font-weight: 400;
+    color: black;
+    line-height: 1;
+}
+
+.modal .modal-cover .modal-content .modal-card .label {
+    font-family: 'Roboto', sans-serif;
+    color: black;
+    font-size: 16px;
+    font-weight: 400;
+    margin: 0;
+}
+
+.modal .modal-cover .modal-content .modal-card .nama-tamu {
+    font-family: 'Edu VIC WA BT Begginer', cursive;
+    color: black;
+    font-size: 20px !important;
+    font-weight: 500;
+    margin: 20px;
+}
+
+.modal .modal-cover .modal-content .modal-card .btn-undangan {
+    background-color: #a68558;
+    padding: 15px 35px;
+    border-radius: 35px;
+    border: none;
+    margin: 10px 0;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+#modal.active {
+    display: none;
+    transition: all 0.5s ease-in-out;
+}
+
+.modal .modal-cover .modal-content .modal-card .btn-undangan:hover {
+    background-color: #4d120b;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+@media (max-width: 860px) {
+    /* Modal Start */
+    .modal {
+        margin: 0;
+    }
+    .modal .modal-cover {
+        width: 600px;
+    }
+    .modal .title-card {
+        font-size: 50px !important;
+        margin-bottom: 25px;
+    }
+    .modal .title-card span {
+        font-size: 45px !important;
+    }
+    .modal .modal-card .label {
+        font-size: 20px !important;
+    }
+    .modal .nama-tamu {
+        font-size: 35px !important;
+    }
+    .modal .modal-cover .modal-content {
+        width: 100%;
+        text-align: center;
+    }
+    .modal .modal-cover .modal-content .img-box img {
+        width: 100%;
+    }
+    .modal .modal-cover .modal-content .modal-card {
+        width: 100%;
+    }
+    .modal .modal-card .btn-undangan {
+        font-size: 20px;
+    }
+    /* Modal End */
+}
+
+@media (max-width: 576px) {
+    .modal {
+        margin: 0;
+    }
+    .modal .modal-cover {
+        width: 300px;
+        padding: 10px;
+    }
+    .modal .title-card {
+        font-size: 35px !important;
+        margin-bottom: 25px;
+    }
+    .modal .title-card span {
+        font-size: 25px !important;
+    }
+    .modal .modal-cover .modal-content {
+        width: 100%;
+        text-align: center;
+    }
+    .modal .modal-cover .modal-content .img-box img {
+        width: 100%;
+    }
+    .modal .modal-cover .modal-content .modal-card {
+        width: 100%;
+    }
+    .modal .modal-card .label {
+        font-size: 11px !important;
+    }
+    .modal .nama-tamu {
+        font-size: 16px !important;
+    }
+    .modal .btn-undangan {
+        font-size: 12px !important;
+        padding: 12px 25px !important;
+    }
+}
